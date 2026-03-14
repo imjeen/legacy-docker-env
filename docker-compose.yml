@@ -17,6 +17,8 @@ services:
     environment:
       - NODE_ENV=development
       - PATH=/app/node_modules/.bin:$PATH
+    # 覆盖 CMD，启动时执行 npm install
+    # command: sh -c "npm install"
     # 启用交互式终端
     stdin_open: true
     tty: true

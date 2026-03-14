@@ -24,7 +24,7 @@ WORKDIR /app
 # 复制 package.json 和 package-lock.json
 COPY package*.json ./
 # 安装 npm 依赖
-RUN npm install
+# RUN npm install
 
 # 复制项目文件
 COPY . .
@@ -33,5 +33,4 @@ COPY . .
 EXPOSE 8080
 
 # 启动命令（可以根据你的项目调整）
-# CMD ["npm", "run", "dev"] --- IGNORE ---
-# CMD ["npm", "start"]
+# CMD ["npm", "install"]
